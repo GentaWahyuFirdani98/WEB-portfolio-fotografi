@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Fotografi | Nama Anda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <button class="burger" aria-label="Toggle navigation">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </button>
+
+
+    <audio id="background-music" loop>
+        <source src="music/background.mp3" type="audio/mpeg">
+        Maaf, browser Anda tidak mendukung pemutar audio.
+    </audio>
+    
+    <!-- Tombol Play/Pause -->
+    <button id="music-toggle" class="music-btn">
+        <i class="fas fa-play"></i> 
+    </button>
+    
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>GENETIX</h1>
+                <p class="subtitle">I AM AN AMATEUR STREET PHOTOGRAPHER</p>
+            </div>
+        </section>
+
+        <!-- Portfolio-->
+        <section id="portfolio" class="gallery-section">
+            <div class="section-header">
+                <h2>Karya Terpilih</h2>
+                <p class="section-subtitle">Eksplorasi karya terbaik saya</p>
+            </div>
+
+            <div id="welcomeModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Selamat Datang!</h2>
+                    <p>Terima kasih telah mengunjungi website ini, Mari Berkolaborasi.</p>
+                </div>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Foto 1 -->
+                <div class="gallery-item">
+                    <img src="images/photo1.jpg" alt="Judul Karya 1" loading="lazy">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Senja</h3>
+                            <p>Fotografi Langit</p>
+                            <button class="view-btn">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 2 -->
+                <div class="gallery-item">
+                    <img src="images/photo2.jpg" alt="Judul Karya 2" loading="lazy">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Harmoni Alam</h3>
+                            <p>Fotografi Alam</p>
+                            <button class="view-btn">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 3 -->
+                <div class="gallery-item">
+                    <img src="images/photo3.jpg" alt="Judul Karya 3" loading="lazy">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Ocean</h3>
+                            <p>Fotografi Portrait</p>
+                            <button class="view-btn">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h2>Hubungi Saya</h2>
+                <p class="section-subtitle">Mari berkolaborasi menciptakan karya</p>
+            </div>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Nama Lengkap" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Alamat Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Ceritakan proyek Anda..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    Kirim Pesan <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.instagram.com/gntwhyufrd_/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=%2B6285156321270&text&type=phone_number&app_absent=0" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="gentawahyufirdani@gmail.com" aria-label="Email"><i class="far fa-envelope"></i></a>
+        </div>
+        <p class="copyright">Genta Wahyu Firdani - 232410103049</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
