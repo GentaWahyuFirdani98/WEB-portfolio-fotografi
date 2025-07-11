@@ -16,4 +16,4 @@ Website ini dibuat untuk menampilkan karya-karya fotografi dengan desain yang re
 ┣ 📜 index.html # Halaman utama website
 ┣ 📜 styles.css # Styling dan tampilan website
 ┣ 📜 script.js # Interaksi dan fungsionalitas website
-┣ 📜 README.md # Dokumentasi proyek
+┣ 📜 README.md # Dokumentasi proyek.
